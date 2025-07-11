@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #                              Diabetes probability based on behavioral, medical, demographic, and economic factors 
 ##                                           Team 29- MGT 6203 Group Project Final Report
@@ -72,3 +73,6 @@ Exploratory codes and files used during the project development.
 ## Contributing
 Olivia Watson, Selda Kocaman, Kelly Cristina Ribeiro Yogui, Thu Thi Diem Le, Hande Pehlivan
 
+=======
+# hpehlivantopcu.github.io
+>>>>>>> origin/main
