@@ -782,40 +782,47 @@ footer a { color: var(--accent); text-decoration: none; }
         </div>
       </div>
 
-      <!-- MARKETING A/B TEST -->
+            <!-- AIRBNB PRICING + A/B TEST -->
       <div class="project-card reveal">
-        <div class="project-card-visual vis-marketing">
+        <div class="project-card-visual vis-airbnb">
           <svg viewBox="0 0 440 180" preserveAspectRatio="none">
-            <!-- bar chart A/B -->
-            <!-- Group A bars -->
-            <rect x="50" y="105" width="38" height="55" rx="4" fill="#b388ff" opacity=".7"/>
-            <rect x="100" y="80" width="38" height="80" rx="4" fill="#b388ff" opacity=".85"/>
-            <rect x="150" y="95" width="38" height="65" rx="4" fill="#b388ff" opacity=".7"/>
-            <!-- Group B bars -->
-            <rect x="220" y="70" width="38" height="90" rx="4" fill="#00e5a0" opacity=".7"/>
-            <rect x="270" y="50" width="38" height="110" rx="4" fill="#00e5a0" opacity=".85"/>
-            <rect x="320" y="60" width="38" height="100" rx="4" fill="#00e5a0" opacity=".7"/>
-            <!-- axis -->
-            <line x1="35" y1="160" x2="380" y2="160" stroke="#1e2733" stroke-width="1"/>
-            <!-- labels -->
-            <text x="55" y="175" fill="#6e7681" font-family="Inter,sans-serif" font-size="9">Control</text>
-            <text x="230" y="175" fill="#6e7681" font-family="Inter,sans-serif" font-size="9">Treatment</text>
-            <text x="50" y="25" fill="#b388ff" font-family="Inter,sans-serif" font-size="10" font-weight="600">● Group A (Control)</text>
-            <text x="220" y="25" fill="#00e5a0" font-family="Inter,sans-serif" font-size="10" font-weight="600">● Group B (Treatment)</text>
-            <!-- stat significance badge -->
-            <rect x="330" y="12" width="90" height="22" rx="6" fill="rgba(0,229,160,0.12)" stroke="rgba(0,229,160,0.3)" stroke-width="1"/>
-            <text x="345" y="27" fill="#00e5a0" font-family="Inter,sans-serif" font-size="9" font-weight="700">p &lt; 0.05 ✓</text>
+            <defs>
+              <linearGradient id="airbnbFill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00e5a0" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#00bcd4" stop-opacity="0.06"/>
+              </linearGradient>
+            </defs>
+            <!-- background panel -->
+            <rect x="26" y="26" width="388" height="128" rx="14" fill="url(#airbnbFill)" stroke="rgba(0,229,160,0.22)" stroke-width="1"/>
+
+            <!-- simple "listing" card -->
+            <rect x="52" y="52" width="150" height="90" rx="10" fill="rgba(13,17,23,0.55)" stroke="#1e2733" stroke-width="1"/>
+            <rect x="64" y="66" width="126" height="10" rx="4" fill="rgba(201,209,217,0.18)"/>
+            <rect x="64" y="84" width="96" height="8" rx="4" fill="rgba(201,209,217,0.14)"/>
+            <rect x="64" y="104" width="70" height="8" rx="4" fill="rgba(201,209,217,0.12)"/>
+            <rect x="64" y="122" width="108" height="8" rx="4" fill="rgba(201,209,217,0.12)"/>
+
+            <!-- A/B price tags -->
+            <rect x="230" y="58" width="170" height="36" rx="10" fill="rgba(179,136,255,0.12)" stroke="rgba(179,136,255,0.3)" stroke-width="1"/>
+            <text x="246" y="80" fill="#b388ff" font-family="Inter,sans-serif" font-size="11" font-weight="700">Control: $150</text>
+
+            <rect x="230" y="106" width="170" height="36" rx="10" fill="rgba(0,229,160,0.12)" stroke="rgba(0,229,160,0.32)" stroke-width="1"/>
+            <text x="246" y="128" fill="#00e5a0" font-family="Inter,sans-serif" font-size="11" font-weight="700">Treatment: $168</text>
+
+            <!-- mini lift badge -->
+            <rect x="320" y="22" width="94" height="22" rx="7" fill="rgba(0,229,160,0.12)" stroke="rgba(0,229,160,0.28)" stroke-width="1"/>
+            <text x="336" y="37" fill="#00e5a0" font-family="Inter,sans-serif" font-size="9" font-weight="700">Lift +4.2%</text>
           </svg>
         </div>
         <div class="project-card-body">
           <div class="project-card-top">
-            <span class="project-card-title">Marketing A/B Test Analysis</span>
-            <span class="project-badge badge-business">Business</span>
+            <span class="project-card-title">Airbnb Pricing Engine + A/B Test Simulation</span>
+            <span class="project-badge badge-ml">ML</span>
           </div>
-          <p class="project-card-desc">Designed and analyzed an A/B experiment comparing two marketing campaigns. Covers hypothesis testing, conversion rate analysis, statistical significance (p-values, confidence intervals), and actionable campaign recommendations.</p>
+          <p class="project-card-desc">Built an end-to-end NYC Airbnb pricing model (EDA → feature engineering → Random Forest vs Gradient Boosting). Added an experimentation module that simulates an A/B test (Control: current prices vs Treatment: model-recommended prices) and estimates revenue lift with bootstrap p-values.</p>
           <div class="project-card-footer">
-            <div class="project-tech"><span>Python</span><span>SciPy</span><span>pandas</span><span>Matplotlib</span></div>
-            <a href="https://github.com/hpehlivantopcu" class="project-link" target="_blank">GitHub →</a>
+            <div class="project-tech"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Matplotlib</span></div>
+            <a href="https://github.com/hpehlivantopcu/airbnb-pricing" class="project-link" target="_blank">GitHub →</a>
           </div>
         </div>
       </div>
