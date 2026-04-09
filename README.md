@@ -42,7 +42,3 @@ A curated list of selected projects featured on the portfolio site.
 
 ## Published site
 Visit the portfolio site at https://hpehlivantopcu.github.io/
-
-## Notes
-- The featured project is the Diabetes risk analysis, with the churn project listed as the second priority item.
-- The site highlights data-driven healthcare research alongside business analytics and modeling work.
