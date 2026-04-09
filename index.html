@@ -767,39 +767,82 @@ footer a { color: var(--accent); text-decoration: none; }
 
     <div class="projects-grid">
 
-      <!-- CHURN ANALYSIS (featured) -->
+      <!-- DIABETES RISK ANALYSIS (featured) -->
       <div class="project-card featured reveal">
         <div class="project-card-visual vis-churn">
           <svg viewBox="0 0 900 220" preserveAspectRatio="none">
             <defs>
-              <linearGradient id="churnFill" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="diabetesFill" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="#00e5a0" stop-opacity="0.25"/>
                 <stop offset="100%" stop-color="#00e5a0" stop-opacity="0"/>
               </linearGradient>
-              <linearGradient id="churnFill2" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="diabetesFill2" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.2"/>
                 <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
               </linearGradient>
             </defs>
-            <!-- grid lines -->
             <line x1="0" y1="55" x2="900" y2="55" stroke="#1e2733" stroke-width="0.6"/>
             <line x1="0" y1="110" x2="900" y2="110" stroke="#1e2733" stroke-width="0.6"/>
             <line x1="0" y1="165" x2="900" y2="165" stroke="#1e2733" stroke-width="0.6"/>
-            <!-- churn rate area (red) -->
-            <path d="M0,160 C60,155 120,140 200,130 S340,120 450,110 S600,95 750,85 L900,78 L900,220 L0,220 Z" fill="url(#churnFill2)"/>
+            <path d="M0,160 C60,155 120,145 200,135 S340,125 450,115 S600,105 750,95 L900,88 L900,220 L0,220 Z" fill="url(#diabetesFill2)"/>
+            <path d="M0,160 C60,155 120,145 200,135 S340,125 450,115 S600,105 750,95 L900,88" fill="none" stroke="#ff6b6b" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M0,140 C60,142 120,148 200,146 S340,138 450,132 S600,122 750,112 L900,98 L900,220 L0,220 Z" fill="url(#diabetesFill)"/>
+            <path d="M0,140 C60,142 120,148 200,146 S340,138 450,132 S600,122 750,112 L900,98" fill="none" stroke="#00e5a0" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="200" cy="146" r="3.5" fill="#00e5a0"/>
+            <circle cx="450" cy="132" r="3.5" fill="#00e5a0"/>
+            <circle cx="750" cy="112" r="3.5" fill="#00e5a0"/>
+            <circle cx="200" cy="135" r="3" fill="#ff6b6b"/>
+            <circle cx="450" cy="115" r="3" fill="#ff6b6b"/>
+            <circle cx="750" cy="95" r="3" fill="#ff6b6b"/>
+            <text x="30" y="40" fill="#00e5a0" font-family="Inter,sans-serif" font-size="11" font-weight="600">● Risk Factors</text>
+            <text x="180" y="40" fill="#ff6b6b" font-family="Inter,sans-serif" font-size="11" font-weight="600">● Diabetes Prevalence</text>
+            <text x="30" y="210" fill="#6e7681" font-family="Inter,sans-serif" font-size="9">Age</text>
+            <text x="420" y="210" fill="#6e7681" font-family="Inter,sans-serif" font-size="9">BMI</text>
+            <text x="850" y="210" fill="#6e7681" font-family="Inter,sans-serif" font-size="9">Lifestyle</text>
+          </svg>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-top">
+            <span class="project-card-title">Predicting Diabetes Risk from Behavioral & Medical Factors</span>
+            <span class="project-badge badge-featured">Featured</span>
+          </div>
+          <p class="project-card-desc">CDC BRFSS analysis of 134,702 respondents to identify demographic, behavioral, medical, and economic predictors of type II diabetes risk. Includes data cleaning, LASSO feature selection, model comparison, and public health interpretation.</p>
+          <div class="project-card-footer">
+            <div class="project-tech">
+              <span>R</span><span>glmnet</span><span>caret</span><span>ggplot2</span><span>ROCR</span><span>Public Health</span>
+            </div>
+            <a href="https://github.com/hpehlivantopcu/Diabetes-probability-based-on-behavioral-medical-demographic-and-economic-factors" class="project-link" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTOMER CHURN ANALYSIS -->
+      <div class="project-card reveal">
+        <div class="project-card-visual vis-churn">
+          <svg viewBox="0 0 900 220" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="churnFillA" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#00e5a0" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#00e5a0" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="churnFillB" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="55" x2="900" y2="55" stroke="#1e2733" stroke-width="0.6"/>
+            <line x1="0" y1="110" x2="900" y2="110" stroke="#1e2733" stroke-width="0.6"/>
+            <line x1="0" y1="165" x2="900" y2="165" stroke="#1e2733" stroke-width="0.6"/>
+            <path d="M0,160 C60,155 120,140 200,130 S340,120 450,110 S600,95 750,85 L900,78 L900,220 L0,220 Z" fill="url(#churnFillB)"/>
             <path d="M0,160 C60,155 120,140 200,130 S340,120 450,110 S600,95 750,85 L900,78" fill="none" stroke="#ff6b6b" stroke-width="2.2" stroke-linecap="round"/>
-            <!-- retention area (green) -->
-            <path d="M0,140 C60,142 120,145 200,140 S340,128 450,120 S600,100 750,75 L900,55 L900,220 L0,220 Z" fill="url(#churnFill)"/>
+            <path d="M0,140 C60,142 120,145 200,140 S340,128 450,120 S600,100 750,75 L900,55 L900,220 L0,220 Z" fill="url(#churnFillA)"/>
             <path d="M0,140 C60,142 120,145 200,140 S340,128 450,120 S600,100 750,75 L900,55" fill="none" stroke="#00e5a0" stroke-width="2.2" stroke-linecap="round"/>
-            <!-- dots on green line -->
             <circle cx="200" cy="140" r="3.5" fill="#00e5a0"/>
             <circle cx="450" cy="120" r="3.5" fill="#00e5a0"/>
             <circle cx="750" cy="75" r="3.5" fill="#00e5a0"/>
-            <!-- dots on red line -->
             <circle cx="200" cy="130" r="3" fill="#ff6b6b"/>
             <circle cx="450" cy="110" r="3" fill="#ff6b6b"/>
             <circle cx="750" cy="85" r="3" fill="#ff6b6b"/>
-            <!-- labels -->
             <text x="30" y="40" fill="#00e5a0" font-family="Inter,sans-serif" font-size="11" font-weight="600">● Retention Rate</text>
             <text x="180" y="40" fill="#ff6b6b" font-family="Inter,sans-serif" font-size="11" font-weight="600">● Churn Rate</text>
             <text x="30" y="210" fill="#6e7681" font-family="Inter,sans-serif" font-size="9">Month 1</text>
@@ -810,59 +853,12 @@ footer a { color: var(--accent); text-decoration: none; }
         <div class="project-card-body">
           <div class="project-card-top">
             <span class="project-card-title">Customer Churn Analysis & Prediction</span>
-            <span class="project-badge badge-featured">Featured</span>
+            <span class="project-badge badge-business">Business</span>
           </div>
           <p class="project-card-desc">End to end churn analysis pipeline: exploratory data analysis on 2M+ telecom customer records, feature engineering, segmentation by demographics and usage behavior, and a predictive classification model. Delivered retention strategy recommendations backed by monthly trend dashboards.</p>
           <div class="project-card-footer">
-            <div class="project-tech">
-              <span>Python</span><span>SQL</span><span>Power BI</span><span>scikit-learn</span><span>SAS</span><span>Tableau</span>
-            </div>
+            <div class="project-tech"><span>Python</span><span>SQL</span><span>Power BI</span><span>scikit-learn</span><span>SAS</span><span>Tableau</span></div>
             <a href="https://github.com/hpehlivantopcu/churn-analysis" class="project-link" target="_blank">GitHub →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- FRAUD DETECTION -->
-      <div class="project-card reveal">
-        <div class="project-card-visual vis-fraud">
-          <svg viewBox="0 0 440 180" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="fraudGlow" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#ffa94d" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#ffa94d" stop-opacity="0.1"/>
-              </linearGradient>
-            </defs>
-            <!-- scatter dots - legitimate (green) -->
-            <circle cx="60" cy="120" r="4" fill="#00e5a0" opacity=".7"/><circle cx="80" cy="100" r="3" fill="#00e5a0" opacity=".8"/>
-            <circle cx="100" cy="130" r="4" fill="#00e5a0" opacity=".6"/><circle cx="130" cy="90" r="3.5" fill="#00e5a0" opacity=".7"/>
-            <circle cx="150" cy="110" r="3" fill="#00e5a0" opacity=".8"/><circle cx="50" cy="80" r="3.5" fill="#00e5a0" opacity=".6"/>
-            <circle cx="170" cy="140" r="4" fill="#00e5a0" opacity=".7"/><circle cx="200" cy="95" r="3" fill="#00e5a0" opacity=".8"/>
-            <circle cx="40" cy="140" r="3" fill="#00e5a0" opacity=".7"/><circle cx="115" cy="60" r="3.5" fill="#00e5a0" opacity=".5"/>
-            <circle cx="220" cy="120" r="3.5" fill="#00e5a0" opacity=".6"/><circle cx="90" cy="55" r="3" fill="#00e5a0" opacity=".7"/>
-            <circle cx="180" cy="70" r="3" fill="#00e5a0" opacity=".6"/><circle cx="140" cy="150" r="3.5" fill="#00e5a0" opacity=".5"/>
-            <!-- scatter dots - fraud (orange) -->
-            <circle cx="280" cy="45" r="5" fill="#ffa94d" opacity=".9"/><circle cx="320" cy="60" r="4.5" fill="#ffa94d" opacity=".85"/>
-            <circle cx="350" cy="35" r="5" fill="#ffa94d" opacity=".9"/><circle cx="300" cy="75" r="4" fill="#ffa94d" opacity=".8"/>
-            <circle cx="380" cy="55" r="4.5" fill="#ffa94d" opacity=".85"/><circle cx="260" cy="30" r="4" fill="#ffa94d" opacity=".7"/>
-            <circle cx="340" cy="80" r="4" fill="#ffa94d" opacity=".75"/><circle cx="400" cy="40" r="5" fill="#ffa94d" opacity=".9"/>
-            <circle cx="250" cy="55" r="4.5" fill="#ffa94d" opacity=".8"/><circle cx="370" cy="70" r="4" fill="#ffa94d" opacity=".75"/>
-            <!-- decision boundary dashed line -->
-            <line x1="230" y1="10" x2="230" y2="170" stroke="#00bcd4" stroke-width="2" stroke-dasharray="6,4" opacity=".7"/>
-            <!-- labels -->
-            <text x="60" y="25" fill="#00e5a0" font-family="Inter,sans-serif" font-size="10" font-weight="600">● Legitimate</text>
-            <text x="280" y="20" fill="#ffa94d" font-family="Inter,sans-serif" font-size="10" font-weight="600">● Fraud</text>
-            <text x="235" y="165" fill="#00bcd4" font-family="Inter,sans-serif" font-size="8">Decision Boundary</text>
-          </svg>
-        </div>
-        <div class="project-card-body">
-          <div class="project-card-top">
-            <span class="project-card-title">Fraud Detection & Anomaly Analysis</span>
-            <span class="project-badge badge-business">Business</span>
-          </div>
-          <p class="project-card-desc">Built a classification pipeline to flag fraudulent transactions using supervised learning. Includes feature engineering on transaction metadata, class imbalance handling (SMOTE), and model comparison across Random Forest, SVM, and Logistic Regression.</p>
-          <div class="project-card-footer">
-            <div class="project-tech"><span>Python</span><span>scikit-learn</span><span>SMOTE</span><span>pandas</span></div>
-            <a href="https://github.com/hpehlivantopcu" class="project-link" target="_blank">GitHub →</a>
           </div>
         </div>
       </div>
