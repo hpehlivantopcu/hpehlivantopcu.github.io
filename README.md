@@ -1,6 +1,6 @@
 # Hande Pehlivan — Portfolio
 
-This repository hosts the GitHub Pages portfolio for Hande Pehlivan, showcasing data and research analytics projects with a focus on healthcare, customer insights, and predictive modeling.
+This repository hosts the GitHub Pages portfolio for Hande Pehlivan, showcasing data analytics projects including business intelligence, predictive modeling, and customer insights.
 
 ## Portfolio summary
 A curated list of selected projects featured on the portfolio site.
